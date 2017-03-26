@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Video Tutorial</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/project-chess.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Code Highlighting -->
+    <link rel="stylesheet" href="css/agate.css">
+    <script src="js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Team R</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="video.html">Video</a>
+                    </li>
+                    <li>
+                        <a href="challenge.html">Challenge</a>
+                    </li>
+                    <li>
+                        <a href="game.html">Game</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/chessWallpaper.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h1>Tutorials</h1>
+                        <hr class="small">
+                        <span class="subheading">Solve the problem in C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+<div class="container">
+	<div class="row">
+      <!--left-->
+      <div class="col-md-3" id="leftCol">
+        <ul class="nav nav-stacked" id="sidebar">
+          <li><a href="#sec1" onclick="toggle_visibility('sec1')">Hello World!</a></li>
+          <li><a href="#sec2" onclick="toggle_visibility('sec2')">Variables</a></li>
+          <li><a href="#sec3" onclick="toggle_visibility('sec3')">If Statement</a></li>
+          <li><a href="#sec4" onclick="toggle_visibility('sec4')">Loops</a></li>
+          <li><a href="#sec5" onclick="toggle_visibility('sec5')">Array 1</a></li>
+          <li><a href="#sec6" onclick="toggle_visibility('sec6')">Array 2</a></li>
+          <li><a href="#sec7" onclick="toggle_visibility('sec7')">Function</a></li>
+          <li><a href="#sec8" onclick="toggle_visibility('sec8')">Introduction to Knight Tour Problem</a></li>
+          <li><a href="#sec9" onclick="toggle_visibility('sec9')">Knight's Tour Computation</a></li>
+          <li><a href="#sec10" onclick="toggle_visibility('sec10')">Backtracking 1 </a></li>
+          <li><a href="#sec11" onclick="toggle_visibility('sec11')">Backtracking 2</a></li>
+          <li><a href="#sec12" onclick="toggle_visibility('sec12')">Backtracking 3</a></li>
+        </ul>
+      </div>
+      <!--/left-->
+
+    <!--right-->
+
+
+      <div class="col-md-9">
+        <div id="sec1" style="display: block;">
+          <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+            <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/43B29fZ8kCM"></iframe>
+          </div>
+          <h3>C Tutorial 1 Hello World!</h3>
+          <p>An introduction to programming in C. We will learn how to create new projects and how to compile code. By the end of this lesson you should be able to get the computer to display hello world.</p>
+          <h3>Exercise</h3>
+          <p>Print the following<br>
+          <code>“This is first line<br>
+          and this is second<br>
+          and this is th<br>
+          ourth”</code><br>
+          All using a single printf statement.</p>
+          <h3>Solution</h3>
+          <pre><code class="c">
+#include &lt;stdio.h>
+int main(){
+printf("This is first line \nand this is second \nand this is th \nourth");
+}
+          </code></pre>
+          <hr>
+      </div>
+
+
+    <div id="sec2" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/o2enOCK2iZg"></iframe>
+      </div>
+      <h3>C Tutorial 2 Variables</h3>
+      <p>We learn what errors look like and that they are nothing to be scared of. We also learn about the basic variables. How to declare them and how to print them on the screen. We discover that to print different kinds of variables(like numbers and words) we use different methods as the program will crash if we don't use the correct one.</p>
+      <h3>Exercise</h3>
+      <p>Print out pi to 6 decimal places.</p>
+      <h3>Solution</h3>
+      <pre><code>
+#include &lt;math.h>
+#include &lt;stdio.h>
+int main(void){
+  printf("%6f\n", M_PI);
+}
+    </pre></code>
+    </div>
+
+    <div id="sec3" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/VpLxEL0k_dY"></iframe>
+      </div>
+      <h3>C Tutorial 3 If Statement</h3>
+      <p>The if statement can be known as decisions, as you can give a test to the program. And If the test passes, the it executes the piece of code inside this curly braces. But if it fails, then it doesn't do anything at all. It's probably the most frequently used statements in c programming. So it might be better for you to get quite familiar with it.
+      </p>
+      <h3>Exercise Solution</h3>
+      <p>Write a program which determines whether a number is odd or even.
+        <pre><code>#include &lt;stdio.h>
+int main()
+{
+    int a = 9;  //You can define the number as whatever you want
+
+    if(a % 2 == 0)
+    {
+        printf("It's even\n");
+    }
+    else
+    {
+        printf("It's odd\n");
+    }
+}     </code></pre>
+      <hr>
+    </div>
+
+    <div id="sec4" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/lcROQeNk_Vk"></iframe>
+      </div>
+      <h3>C tutorial 4 Loops</h3>
+      <p>There are three main loops in c, which are for-loop, while-loop and do-loop. All of them can execute a block of code for several times without actually typing the code each time and are pretty similar with each other, while there is still a little difference respectively. But all these three loops have the part of test expression.</p>
+      <h3>Exercise</h3>
+      <p>write a program which can only print out one * character at a time and display the following figure.</p>
+      <pre>
+*
+**
+***
+****
+*****
+      </pre>
+      <h3>Solution</h3>
+      <pre><code>
+#include &lt;stdio.h>
+int main()
+{
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+      </code></pre>
+      <hr>
+    </div>
+
+    <div id="sec5" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/ww4Z8W5vG44"></iframe>
+      </div>
+      <h3>C tutorial 5 array 1</h3>
+      <p>Array is a data collection which only holds the values of the same type, and the size and the type of the array is fixed after declaration. We must declare the size and type if we declare an array. To access the value of each element in the array, we need to use loops to do that.</p>
+      <h3>Exercise</h3>
+      <p>Find the largest element of an array.</p>
+      <h3>Solution</h3>
+      <pre><code>
+#include &lt;stdio.h>
+int main()
+{
+    int array[5] = {5,3,2,6,8};
+    int max = array[0];
+    for(int i = 0; i < 5; i++)
+    {
+        if(max < array[i])
+        {
+            max = array[i];
+        }
+    }
+    printf("The largest number in the array is %d\n",max);
+}
+      </code></pre>
+      <hr>
+    </div>
+
+    <div id="sec6" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/wEZeOZmRD_A"></iframe>
+      </div>
+      <h3>C tutorial 6 array 2</h3>
+      <p>In this tutorial we learn about a new data structure called arrays. We learn what they are and how to use them. We use loops to print the content of arrays. We also cover multidimensional arrays and how to initialise them.</p>
+      <h3>Exercise</h3>
+      <p>Write a program in C to find the sum of all elements of an array.</p>
+      <h3>Solution</h3>
+      <pre><code class="c">
+#include &lt;stdio.h>
+void main()
+{
+    int a[100];
+    int i, n, sum=0;
+    printf("\n\nFind sum of all elements of array:\n");
+    printf("Input the number of elements to be stored in the array :");
+    scanf(“%d”,&n);
+
+    printf("Input %d elements in the array :\n",n);
+    for(i=0;i&lt;n;i++){
+	     printf("element - %d : ",i);
+	     scanf("%d",&a[i]);
+    }
+    for(i=0; i&lt;n; i++){
+      sum += a[i];
+    }
+    printf("Sum of all elements stored in the array is : %d\n\n", sum);
+}
+      </code></pre>
+      <hr>
+    </div>
+
+    <div id="sec7" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/kOH4FYImz_4"></iframe>
+      </div>
+      <h3>C tutorial 7 Function</h3>
+      <p>In this tutorial we discuss functions in c. We learn how to create functions so that they work and why we would want to use them. We discuss the differences between functions which have a return value and the ones which don't and we learn how to pass arguments to these functions.</p>
+      <h3>Exercise</h3>
+      <p>Write a program in C to find the square of any number using the function.</p>
+      <h3>Solution</h3>
+      <pre><code>
+#include &lt;stdio.h>
+double square(double num)
+{
+    return (num * num);
+}
+int main()
+{
+    int num;
+    double n;
+    printf("\n\n Function : find square of any number :\n");
+    printf("------------------------------------------------\n");
+    printf("Input any number for square : ");
+    scanf("%d", &num);
+    n = square(num);
+    printf("The square of %d is : %.2f\n", num, n);
+    return 0;
+}
+</code></pre>
+      <hr>
+    </div>
+
+    <div id="sec8" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/8FMXEx-s44A"></iframe>
+      </div>
+      <h3>Introduction to knight's Tour Problem</h3>
+      <p>
+        Knight’s tour is a sequence of movement of a chess piece, knight.
+        The knight must visit all of the squares on a chessboard for a successful tour, and the same square can only be visited once.
+        A knight can make a movement such as; move two squares horizontally, then one square vertically, OR two squares vertically then horizontally once.
+        So its like a shape of an L, or a rotated L, or a reversed L, or both.
+        The size of a chessboard does not matter in knight’s tour.
+        However with some chessboard sizes, you are not able to make a complete tour.
+        If a tour is closed, that means from the very last square visited, you can go back to the starting square.
+        If a tour is opened, it means you cannot go back to the starting square from the last square.</p>
+      <hr>
+    </div>
+
+
+
+    <div id="sec9" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/RNvui2zEEPE"></iframe>
+      </div>
+      <h3>Knight's Tour Computation</h3>
+      <p>We will be trying to solve knight’s tour by programming, but first we can compute knight’s tour on our own first, to familiarise ourselves to the problem. Playing the knight’s tour game is a good way familiarise with the problem.You can construct a tree to represent the movements of a knight on a chessboard. The starting square is the root of the tree. You can add nodes to the tree, by adding the squares you have visited. Record the other square you did not visit as well. Come back to the square you did not visit when you reach a dead end. Continue to construct the tree from the square(node) you have visited.</p>
+      <h3>Exercise</h3>
+      <ol>
+      <li>Construct your own tree by hand, to represent knight’s tour on a 4x4 12 square chessboard, starting on a square 1.</li>
+      <li>Construct your own tree by hand, to represent a closed knight’s tour on a 4x4 12 square chessboard, starting on a square of your choice.</li>
+      </ol>
+      <h3>Solution</h3>
+      <img src="img/tree.jpg" alt="UCL Logo" class="img-responsive center-block" style="width:500px;height:300px;"/>
+      <hr>
+    </div>
+
+    <div id="sec10" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/tuPyM0kF4RM"></iframe>
+      </div>
+      <h3>Backtracking 1</h3>
+      <pre><code>
+//pseudocode
+If all squares are visited
+  print the solution
+Else
+  a) Add one of the next moves to solution vector and recursively
+  check if this move leads to a solution. (A Knight can make maximum
+  eight moves. We choose one of the 8 moves in this step).
+  b) If the move chosen in the above step doesn't lead to a solution
+  then remove this move from the solution vector and try other
+  alternative moves.
+  c) If none of the alternatives work then return false (Returning false
+  will remove the previously added item in recursion and if false is
+  returned by the initial call of recursion then "no solution exists")
+      </code></pre>
+      <h3>Exercise</h3>
+      According to the pseudocode, write a C program to solve the Knight's Tour Problem. Check subsequent videos for solution.
+      <h3>Solution</h3>
+      Watch our next video :)
+    </div>
+
+
+    <div id="sec11" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/0wReYwslUSg"></iframe>
+      </div>
+      <h3>backtracking 2</h3>
+      <pre><code>
+// Utility functions to solve the problem using backtracking
+// Check the next video for the complete solution
+// Source: http://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/
+
+#include < stdio.h>
+#include < stdbool.h>
+#define N 8
+
+int solveKTUtil(int x, int y, int movei, int sol[N][N],
+ int xMove[],  int yMove[]);
+
+/* A utility function to check if i,j are valid indexes
+   for N*N chessboard */
+bool isSafe(int x, int y, int sol[N][N])
+{
+    return ( x >= 0 && x < N && y >= 0 &&
+             y < N && sol[x][y] == -1);
+}
+
+/* A utility function to print solution matrix sol[N][N] */
+void printSolution(int sol[N][N])
+{
+    for (int x = 0; x < N; x++)
+    {
+        for (int y = 0; y < N; y++)
+            printf(" %2d ", sol[x][y]);
+        printf("\n");
+    }
+}
+/* A recursive utility function to solve Knight Tour
+   problem */
+int solveKTUtil(int x, int y, int movei, int sol[N][N],
+                int xMove[N], int yMove[N])
+{
+   int k, next_x, next_y;
+   if (movei == N*N)
+       return true;
+
+   /* Try all next moves from the current coordinate x, y */
+   for (k = 0; k < 8; k++)
+   {
+       next_x = x + xMove[k];
+       next_y = y + yMove[k];
+       if (isSafe(next_x, next_y, sol))
+       {
+         sol[next_x][next_y] = movei;
+         if (solveKTUtil(next_x, next_y, movei+1, sol,
+                         xMove, yMove) == true)
+             return true;
+         else
+             sol[next_x][next_y] = -1;// backtracking
+       }
+
+
+   return false;
+}
+      </code></pre>
+      <h3>Exercise</h3>
+      <p>Write our last function solveKT to join all utility functions together. You need two arrays xMove and yMove to define the next move of the knight. Then call solveKTUtil to determine whether we have found a solution.</p>
+      <h3>Solution</h3>
+      <pre><code>
+bool solveKT()
+{
+    int sol[N][N];
+
+    /* Initialization of solution matrix */
+    for (int x = 0; x < N; x++)
+        for (int y = 0; y < N; y++)
+            sol[x][y] = -1;
+
+    /* xMove[] and yMove[] define next move of Knight.
+       xMove[] is for next value of x coordinate
+       yMove[] is for next value of y coordinate */
+    int xMove[8] = {  2, 1, -1, -2, -2, -1,  1,  2 };
+    int yMove[8] = {  1, 2,  2,  1, -1, -2, -2, -1 };
+
+    // Since the Knight is initially at the first block
+    sol[0][0]  = 0;
+
+    /* Start from 0,0 and explore all tours using
+       solveKTUtil() */
+    if (solveKTUtil(0, 0, 1, sol, xMove, yMove) == false)
+    {
+        printf("Solution does not exist");
+        return false;
+    }
+    else
+        printSolution(sol);
+
+    return true;
+}
+      </code></pre>
+      Watch our next video for the backtracking algorithm.
+    </div>
+
+
+    <div id="sec12" style="display: none;">
+      <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 853px;">
+        <iframe class="embed-responsive-item" style="max-width:853px; max-height:480px;" src="https://www.youtube.com/embed/J7PY-ptVH-8"></iframe>
+      </div>
+      <h3>Backtracking 3</h3>
+      <pre><code>
+// Complete C program for Knight Tour problem
+// Source: http://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/
+#include&lt;stdio.h>
+#include&lt;stdbool.h>
+#define N 8
+
+int solveKTUtil(int x, int y, int movei, int sol[N][N],
+ int xMove[],  int yMove[]);
+
+/* A utility function to check if i,j are valid indexes
+   for N*N chessboard */
+bool isSafe(int x, int y, int sol[N][N])
+{
+    return ( x >= 0 && x < N && y >= 0 &&
+             y < N && sol[x][y] == -1);
+}
+
+/* A utility function to print solution matrix sol[N][N] */
+void printSolution(int sol[N][N])
+{
+    for (int x = 0; x < N; x++)
+    {
+        for (int y = 0; y < N; y++)
+            printf(" %2d ", sol[x][y]);
+        printf("\n");
+    }
+}
+
+/* This function solves the Knight Tour problem using
+   Backtracking.  This function mainly uses solveKTUtil()
+   to solve the problem. It returns false if no complete
+   tour is possible, otherwise return true and prints the
+   tour.
+   Please note that there may be more than one solutions,
+   this function prints one of the feasible solutions.  */
+bool solveKT()
+{
+    int sol[N][N];
+
+    /* Initialization of solution matrix */
+    for (int x = 0; x < N; x++)
+        for (int y = 0; y < N; y++)
+            sol[x][y] = -1;
+
+    /* xMove[] and yMove[] define next move of Knight.
+       xMove[] is for next value of x coordinate
+       yMove[] is for next value of y coordinate */
+    int xMove[8] = {  2, 1, -1, -2, -2, -1,  1,  2 };
+    int yMove[8] = {  1, 2,  2,  1, -1, -2, -2, -1 };
+
+    // Since the Knight is initially at the first block
+    sol[0][0]  = 0;
+
+    /* Start from 0,0 and explore all tours using
+       solveKTUtil() */
+    if (solveKTUtil(0, 0, 1, sol, xMove, yMove) == false)
+    {
+        printf("Solution does not exist");
+        return false;
+    }
+    else
+        printSolution(sol);
+
+    return true;
+}
+
+/* A recursive utility function to solve Knight Tour
+   problem */
+int solveKTUtil(int x, int y, int movei, int sol[N][N],
+                int xMove[N], int yMove[N])
+{
+   int k, next_x, next_y;
+   if (movei == N*N)
+       return true;
+
+   /* Try all next moves from the current coordinate x, y */
+   for (k = 0; k < 8; k++)
+   {
+       next_x = x + xMove[k];
+       next_y = y + yMove[k];
+       if (isSafe(next_x, next_y, sol))
+       {
+         sol[next_x][next_y] = movei;
+         if (solveKTUtil(next_x, next_y, movei+1, sol,
+                         xMove, yMove) == true)
+             return true;
+         else
+             sol[next_x][next_y] = -1;// backtracking
+       }
+   }
+
+   return false;
+}
+
+/* Driver program to test above functions */
+int main()
+{
+    solveKT();
+    return 0;
+}
+      </pre></code>
+      <h3>Exercise</h3>
+      <ol>
+      <li>Modify the program to find a solution for the small chessboard on the game section</li>
+      <li>Modify the program to print a closed tour for the small chessboard</li>
+      </ol>
+      <h3>Solution</h3>
+      <ol><li> You have 4 parts to change. Firstly, change the chessboard size from 8 to 4. Secondly, mark all four corners as visited in the function solveKT() as they are inaccessible in the small chessboard. Thirdly, change the starting square from 0,0 to 0,1. Fourthly, in function solveKTUtil(), return true when N*N-4 squares are visited instead of N*N.</li>
+      <pre><code>
+// Only changed parts are shown here
+#define N 4
+bool solveKT()
+{
+    int sol[N][N];
+
+    /* Initialization of solution matrix */
+    for (int x = 0; x < N; x++)
+        for (int y = 0; y < N; y++)
+            sol[x][y] = -1;
+    sol[0][0] = 0;
+    sol[0][3] = 0;
+    sol[3][0] = 0;
+    sol[3][3] = 0;
+    /* xMove[] and yMove[] define next move of Knight.
+       xMove[] is for next value of x coordinate
+       yMove[] is for next value of y coordinate */
+    int xMove[8] = {  2, 1, -1, -2, -2, -1,  1,  2 };
+    int yMove[8] = {  1, 2,  2,  1, -1, -2, -2, -1 };
+
+    // Since the Knight is initially at the first block
+    sol[0][1]  = 1;
+
+    /* Start from 0,1 and explore all tours using
+       solveKTUtil() */
+    if (solveKTUtil(0, 1, 1, sol, xMove, yMove) == false)
+    {
+        printf("Solution does not exist");
+        return false;
+    }
+    else
+        printSolution(sol);
+
+    return true;
+}
+problem */
+int solveKTUtil(int x, int y, int movei, int sol[N][N],
+             int xMove[N], int yMove[N])
+{
+int k, next_x, next_y;
+if (movei == N*N-4)
+    return true;
+
+/* Try all next moves from the current coordinate x, y */
+for (k = 0; k < 8; k++)
+{
+    next_x = x + xMove[k];
+    next_y = y + yMove[k];
+    if (isSafe(next_x, next_y, sol))
+    {
+      sol[next_x][next_y] = movei+1;
+      if (solveKTUtil(next_x, next_y, movei+1, sol,
+                      xMove, yMove) == true)
+          return true;
+      else
+          sol[next_x][next_y] = -1;// backtracking
+    }
+}
+
+return false;
+}
+      </code></pre>
+      <li>You only have 1 part to change. In the solveKTUtil function, return true only when  next_x == 0 && next_y == 1. This means that we have returned to the starting square.</li>
+      <pre><code class="c">
+for (k = 0; k < 8; k++)
+{
+    next_x = x + xMove[k];
+    next_y = y + yMove[k];
+  if (movei == N*N-4 && next_x == 0 && next_y == 1)
+      return true;
+}
+      </code></pre>
+      </ol>
+      <h3>Extension Activity</h3>
+      <p> Backtracking is a very inefficient algorithm. When the chessboard grows in size, it takes much longer for the algorithm to print the trace. Do some research online to find more efficient algorithm using heuristics and code it yourself.</p>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="text-left">
+                <img src="img/uclLogo.png" alt="UCL Logo" class="img-responsive center-block" style="width:500px;height:100px;"/>
+                </div>
+                </ul>
+                <p class="copyright text-muted">Copyright &copy; Rosetta Wanyue Zhang, Xiaohan Shen, Ryo Mochiruki, Gleb Skryabin 2017</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/project-chess.js"></script>
+
+</body>
+
+</html>
