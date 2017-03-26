@@ -44,7 +44,7 @@ var visibleDivId = null;
 
 function toggle_visibility(divId) {
   if(visibleDivId === divId) {
-    visibleDivId = null;
+    visibleDivId = divId;
   } else {
     visibleDivId = divId;
   }
